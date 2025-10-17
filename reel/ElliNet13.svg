@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="650" viewBox="0 0 650 650">
+  <rect width="100%" height="100%" fill="#000000"/>
+  
+  <defs>
+    <style type="text/css"><![CDATA[
+      .mono { font-family: "Courier New", Courier, monospace; fill: #2b56ff; }
+      .big { font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif; fill: #2b56ff; font-weight: 900; letter-spacing: -20px; }
+    ]]></style>
+
+    <!-- arc path for curved text (upper semicircle) moved further down -->
+    <path id="arcTop" d="M125,530 A200,200 0 0,1 525,530" fill="none"/>
+    <!-- reversed arc for bottom -->
+    <path id="arcBottom" d="M525,350 A200,200 0 0,0 125,350" fill="none"/>
+  </defs>
+
+  <!-- Top small monospaced text -->
+  <text class="mono" font-size="100" x="50%" y="130" text-anchor="middle">ElliNet13</text>
+
+  <!-- Bottom small monospaced text -->
+  <text class="mono" font-size="100" x="50%" y="600" text-anchor="middle">ElliNet13</text>
+
+  <!-- Large curved text following top arc -->
+  <text class="big" font-size="155">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">ElliNet13</textPath>
+  </text>
+
+  <!-- Large curved text along underside (optional for boldness) -->
+  <text class="big" font-size="120" opacity="0.0">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">ElliNet13</textPath>
+  </text>
+</svg>
